@@ -59,7 +59,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 3 SPACE  &kp ENTER              &kp BACKSPACE  &kp LANG1                         &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         qwerty {
@@ -70,7 +70,7 @@
 &kp LCTRL         &kp LGUI  &kp LALT  &lt 2 LANG2  &lt 3 SPACE  &kp ENTER              &kp BACKSPACE  &kp LANG1                             &kp RSHFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         NUM {
