@@ -54,23 +54,23 @@
         oonishi {
             bindings = <
 &kp Q             &kp L         &kp U         &kp COMMA    &kp PERIOD                                         &kp F      &kp W  &kp R  &kp Y    &kp P
-&kp E             &kp I         &kp A         &kp O        &kp MINUS    &mkp MB3               &mo 6          &kp K      &kp T  &kp N  &lt 5 S  &kp H
+&kp E             &kp I         &kp A         &kp O        &kp MINUS    &kp C_MUTE             &mo 6          &kp K      &kp T  &kp N  &lt 5 S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp RIGHT_BRACKET      &kp BACKSLASH  &kp G      &kp D  &kp M  &kp J    &kp B
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 3 SPACE  &kp ENTER              &kp BACKSPACE  &kp LANG1                         &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         qwerty {
             bindings = <
 &kp Q             &kp W     &kp E     &kp R        &kp T                                              &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S     &kp D     &kp F        &kp G        &mkp MB3               &mo 6          &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS
+&kp A             &kp S     &kp D     &kp F        &kp G        &kp C_MUTE             &mo 6          &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS
 &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V        &kp B        &kp RIGHT_BRACKET      &kp BACKSLASH  &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH
 &kp LCTRL         &kp LGUI  &kp LALT  &lt 2 LANG2  &lt 3 SPACE  &kp ENTER              &kp BACKSPACE  &kp LANG1                             &kp RSHFT
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NUM {
