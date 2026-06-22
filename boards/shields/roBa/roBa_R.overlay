@@ -19,6 +19,8 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        automouse-layer = <4>;
+        time-to-live-ms = <30000>;
     };
 };
 
