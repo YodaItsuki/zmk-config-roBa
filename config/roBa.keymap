@@ -10,9 +10,7 @@
     quick-tap-ms = <0>;
 };
 
-&sl {
-    release-after-ms = <250>;
-};
+&sl { release-after-ms = <250>; };
 
 &trackball {
     scroll-layers = <5>;
@@ -52,6 +50,7 @@
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&sl MOUSE>;
+
             label = "MKP_EXIT_AML";
         };
     };
@@ -103,19 +102,19 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp F7  &kp F8  &kp F9  &kp F10                      &trans  &mkp MB4         &kp UP_ARROW    &mkp MB5         &trans
-&kp TAB         &kp F4  &kp F5  &kp F6  &kp F11  &trans      &tog 1  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans  &trans  &kp LC(LS(TAB))  &mkp MB3        &kp LC(TAB)      &trans
-&kp LCTRL       &trans  &trans  &trans  &trans   &trans      &trans  &trans                                                    &trans
+&kp ESCAPE      &kp F7  &kp F8  &kp F9  &kp F10                          &trans  &mkp MB4         &kp UP_ARROW    &mkp MB5         &trans
+&kp TAB         &kp F4  &kp F5  &kp F6  &kp F11  &trans      &tog 1      &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans      &trans  &kp LC(LS(TAB))  &mkp MB3        &kp LC(TAB)      &trans
+&kp LCTRL       &trans  &trans  &trans  &trans   &trans      &kp DELETE  &trans                                                    &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans             &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp_exit_AML MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
