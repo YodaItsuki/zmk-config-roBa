@@ -124,7 +124,7 @@ Zephyr exposes these values through the GAP Peripheral Preferred Connection Para
 
 ## Low-risk change candidates
 
-1. Add comparison build configs for PMW3610 polling modes.
+1. Add comparison build configs for PMW3610 polling modes under `config/`.
    - Safe because the PMW3610 driver Kconfig choice confirms all three symbols exist.
    - Keep CPI, orientation, scroll, automouse, and smart algorithm unchanged.
 
@@ -142,4 +142,3 @@ Zephyr exposes these values through the GAP Peripheral Preferred Connection Para
 - Actual BLE notification scheduling delay is not measured because the current HOG path has no completion timestamp logging.
 - No firmware build has been run locally in this workspace yet.
 - If low-latency connection parameters do not improve behavior enough, the likely robust fix is a mouse movement coalescer before the BLE HOG mouse queue, preserving accumulated relative movement while avoiding long queues of old reports.
-
