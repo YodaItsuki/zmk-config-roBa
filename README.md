@@ -9,7 +9,7 @@ trackball. Flash pointer-latency test firmware to `roBa_R`.
 
 GitHub Actions builds these comparison artifacts:
 
-- `roBa_R-default`: normal build, using the PMW3610 driver's default 250Hz mode
+- `roBa_R-default`: normal build, using 250Hz with low-latency BLE preferences
 - `roBa_R-250hz`: explicit 250Hz baseline
 - `roBa_R-125hz`: hardware 125Hz polling
 - `roBa_R-125sw`: 250Hz sensor polling with software 125Hz reporting

@@ -25,22 +25,22 @@ include:
  - board: seeeduino_xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
-   cmake-args: -DEXTRA_CONF_FILE=roBa_R_250hz.conf
+   cmake-args: -DOVERLAY_CONFIG=/tmp/zmk-config/config/roBa_R_250hz.conf
    artifact-name: roBa_R-250hz
  - board: seeeduino_xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
-   cmake-args: -DEXTRA_CONF_FILE=roBa_R_125hz.conf
+   cmake-args: -DOVERLAY_CONFIG=/tmp/zmk-config/config/roBa_R_125hz.conf
    artifact-name: roBa_R-125hz
  - board: seeeduino_xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
-   cmake-args: -DEXTRA_CONF_FILE=roBa_R_125sw.conf
+   cmake-args: -DOVERLAY_CONFIG=/tmp/zmk-config/config/roBa_R_125sw.conf
    artifact-name: roBa_R-125sw
  - board: seeeduino_xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
-   cmake-args: -DEXTRA_CONF_FILE=roBa_R_ble_low_latency.conf
+   cmake-args: -DOVERLAY_CONFIG=/tmp/zmk-config/config/roBa_R_ble_low_latency.conf
    artifact-name: roBa_R-250hz-ble-low-latency
  - board: seeeduino_xiao_ble
    shield: roBa_L

@@ -127,6 +127,7 @@ Zephyr exposes these values through the GAP Peripheral Preferred Connection Para
 1. Add comparison build configs for PMW3610 polling modes under `config/`.
    - Safe because the PMW3610 driver Kconfig choice confirms all three symbols exist.
    - Keep CPI, orientation, scroll, automouse, and smart algorithm unchanged.
+   - Use an absolute `OVERLAY_CONFIG` path in `build.yaml` so the `studio-rpc-usb-uart` snippet can keep its own `EXTRA_CONF_FILE` and Zephyr can find the files copied under `/tmp/zmk-config/config`.
 
 2. Add a separate 250Hz + low-latency BLE comparison build.
    - Use only confirmed Zephyr/ZMK symbols:
