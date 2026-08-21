@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
+#define MOUSE_HOLD 7
 
 &mt {
     flavor = "balanced";
@@ -74,7 +75,7 @@
 &kp Q             &kp L         &kp U         &kp COMMA    &kp PERIOD                                         &kp F      &kp W  &kp R  &kp Y    &kp P
 &kp E             &kp I         &kp A         &kp O        &kp MINUS    &kp C_MUTE             &mo 6          &kp K      &kp T  &kp N  &lt 5 S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp RIGHT_BRACKET      &kp BACKSLASH  &kp G      &kp D  &kp M  &kp J    &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 3 SPACE  &lt 4 ENTER            &kp BACKSPACE  &kp LANG1                         &kp RIGHT_SHIFT
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG2  &lt 3 SPACE  &lt MOUSE_HOLD ENTER   &kp BACKSPACE  &kp LANG1                         &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -85,7 +86,7 @@
 &kp Q             &kp W     &kp E     &kp R        &kp T                                              &kp Y      &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S     &kp D     &kp F        &kp G        &kp C_MUTE             &mo 6          &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS
 &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V        &kp B        &kp RIGHT_BRACKET      &kp BACKSLASH  &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp LCTRL         &kp LGUI  &kp LALT  &lt 2 LANG2  &lt 3 SPACE  &kp ENTER              &kp BACKSPACE  &kp LANG1                             &kp RSHFT
+&kp LCTRL         &kp LGUI  &kp LALT  &lt 2 LANG2  &lt 3 SPACE  &lt MOUSE_HOLD ENTER   &kp BACKSPACE  &kp LANG1                             &kp RSHFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -133,6 +134,15 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        MOUSE_HOLD {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mo 5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
     };
