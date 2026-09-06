@@ -43,6 +43,11 @@ include:
    cmake-args: -DOVERLAY_CONFIG=/tmp/zmk-config/config/roBa_R_ble_low_latency.conf
    artifact-name: roBa_R-250hz-ble-low-latency
  - board: seeeduino_xiao_ble
+   shield: roBa_R
+   snippet: studio-rpc-usb-uart
+   cmake-args: -DOVERLAY_CONFIG=/tmp/zmk-config/config/roBa_R_125sw_ble_low_latency.conf
+   artifact-name: roBa_R-125sw-ble-low-latency
+ - board: seeeduino_xiao_ble
    shield: roBa_L
  - board: seeeduino_xiao_ble
    shield: settings_reset
